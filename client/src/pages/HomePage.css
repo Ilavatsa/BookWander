@@ -1,0 +1,56 @@
+/* App.css */
+
+.homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.homepage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slide 15s infinite;
+    z-index: -1;
+}
+
+@keyframes slide {
+    0% { background-image: url('https://i.pinimg.com/564x/c1/b1/2e/c1b12ef604dc1c0eddbb881e3de432f2.jpg'); }
+    33% { background-image: url('https://i.pinimg.com/564x/9c/8a/46/9c8a46c3e5a29da2893f653c515fb69f.jpg'); }
+    66% { background-image: url('https://i.pinimg.com/564x/4e/a5/fb/4ea5fb9be5cb12bfe265bf9c46f09ac8.jpg'); }
+    100% { background-image: url('https://i.pinimg.com/564x/e8/51/76/e8517648653f0938746c94aa94ae555c.jpg'); }
+}
+
+.homepage h1, .homepage p, .homepage-links {
+    display: inline-block;
+    z-index: 1; /* Ensure content appears above the background */
+}
+
+.homepage-links {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.homepage-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.homepage-links a:hover {
+    text-decoration: underline;
+}

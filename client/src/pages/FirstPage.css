@@ -1,0 +1,71 @@
+.fleet-container {
+    max-width: 800px; /* Reduced width */
+    max-height: 800px; /* Set a maximum height */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a6985;
+    overflow: hidden; /* Hide any overflow content if it exceeds the container height */
+  }
+  
+  
+  .fleet-text-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .fleet-text {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .fleet-card {
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .fleet-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .fleet-image img {
+    width: 60%; /* Adjust the width to suit your needs */
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  }
+  
+  .fleet-buttons {
+    padding: 16px;
+    display: flex;
+    justify-content: center; /* Center align the button groups */
+    gap: 60px; /* Space between the groups */
+  }
+  
+  .button-group-left,
+  .button-group-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons in each group */
+  }
+  
+  .fleet-button {
+    margin: 8px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .fleet-button:hover {
+    background-color: #0056b3;
+  }
+  
